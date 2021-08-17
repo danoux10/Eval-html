@@ -20,8 +20,9 @@ body{
   padding-top: 5px;
   padding-bottom: 5px;
   background: white;
-  border-bottom: 4px solid darkgoldenrod;
+  border-bottom: 4px solid #b8860b;
   z-index: 1;
+  font-family: 'champ';
 }
 /*! placement is on responsive*/
 
@@ -35,6 +36,20 @@ body{
 /*evenement*/
 
 /*bientôt*/
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+#title-soon{
+  font-size: 300%;
+  color: #b8860b;
+  text-shadow: 3px 3px 3px #c0c0c0;
+}
+
 /* * ne pas faire un truc trop complique */
 /*responcise*/
 /*TODO chose size for responsive*/
