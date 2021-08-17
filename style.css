@@ -1,6 +1,28 @@
 /*ajout font*/
+@font-face {
+  font-family: 'ard';
+  src: url('font/ARDECODE.ttf');
+}
+
+@font-face {
+  font-family: 'champ';
+  src: url('font/C&L.ttf');
+}
+
+body{
+  font-family: sans-serif;
+  margin: 0;
+}
 
 /*navbar*/
+#navbar{
+  position: fixed;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: white;
+  border-bottom: 4px solid darkgoldenrod;
+  z-index: 1;
+}
 /*! placement is on responsive*/
 
 /*footer*/
