@@ -9,9 +9,57 @@
   src: url('font/C&L.ttf');
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: sans-serif;
   margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+/*commun au page*/
+.title{
+  text-transform: uppercase;
+  font-family: 'champ';
+  font-size: 43px;
+  border-bottom: 4px solid #b8860b;
+}
+
+.subtitle{
+  color: #b8860b;
+}
+
+.separator{
+  width: 200px;
+  padding: 0 0 2% 0;
+  line-height: 54PX;
+}
+
+.bg-black{
+  background: #151515;
+  color: #ffffff;
+}
+
+.bg-white{
+  background: #ffffff;
+  color: black;
+}
+
+.bg-black a{ 
+  color: #ffffff;
+}
+
+.bg-white a{
+  color: black;
 }
 
 /*navbar*/
@@ -32,6 +80,129 @@ body{
 /*accueil*/
 
 /*ratafia*/
+/*navbar ratafia*/
+#nav-ratafia{
+  background: #151515;
+  position: fixed;
+  width: 100vw;
+  border-bottom: 1px solid #ffffff;
+}
+
+#nav-ratafia a{
+  color: gold;
+}
+
+#nav-ratafia a:hover{
+  border-bottom: 3px solid #b8860b;
+  border-radius: 15px;
+  transition:  .2S;
+}
+
+#nav-ratafia ul{
+  display: flex;
+  justify-content: space-around;
+}
+/*style produit*/
+#ratafia, #old, #veryold, #confit{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100pX 0 100px 0;
+}
+
+.article{
+  width: 50%;
+}
+
+.download{
+  margin-top: 40px;
+  border: 4px solid #b8860b;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+.download:hover{
+  box-shadow: 2px 2px 2px rgba(184, 134, 11, .8);
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentation{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.information{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.element{
+  margin-bottom: 0%;
+  text-align: center;
+  align-items: center;
+}
+
+#ratafia .information{
+  margin-left: 50px;
+}
+
+/* image size */
+
+#bottle-ratafia,#bottle-old,#bottle-veryold,#confit-ratafia,#duo-confit{
+  margin-left: 5%;
+  margin-right: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+#label-ratafia,#label-old,#label-veryold{
+  margin-left: 1%;
+  margin-right: 5%;
+}
+
+#bottle-ratafia{
+  width: 110px;
+}
+
+#label-ratafia{
+  width: 160px;
+}
+
+#bottle-old{
+  width: 160px;
+}
+
+#label-old{
+  width: 160px;
+}
+
+#bottle-veryold{
+  width: 160px;
+}
+
+#label-veryold{
+  width: 180px;
+}
+
+#confit-ratafia{
+  width: 190px;
+}
+
+#duo-confit{
+  width: 190px;
+}
+
 
 /*evenement*/
 
@@ -49,7 +220,5 @@ body{
   color: #b8860b;
   text-shadow: 3px 3px 3px #c0c0c0;
 }
-
-/* * ne pas faire un truc trop complique */
 /*responcise*/
 /*TODO chose size for responsive*/
