@@ -27,6 +27,15 @@ ul{
 }
 
 /*commun au page*/
+.placement{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100pX 0 100px 0;
+}
+
 .title{
   text-transform: uppercase;
   font-family: 'champ';
@@ -39,14 +48,14 @@ ul{
 }
 
 .separator{
-  width: 200px;
+  width: 100px;
   padding: 0 0 2% 0;
   line-height: 54PX;
 }
 
 .bg-black{
-  background: #151515;
-  color: #ffffff;
+  background: #fff;
+  color: #000;
 }
 
 .bg-white{
@@ -78,7 +87,35 @@ ul{
 /*! placement is on responsive*/
 
 /*accueil*/
+.article{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.text-home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bg-image{
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-history{
+  font-size: 16px;
+}
+
+.tab{
+  margin-left: 40px;
+}
 /*ratafia*/
 /*navbar ratafia*/
 #nav-ratafia{
@@ -103,15 +140,6 @@ ul{
   justify-content: space-around;
 }
 /*style produit*/
-#ratafia, #old, #veryold, #confit{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 100pX 0 100px 0;
-}
-
 .article{
   width: 50%;
 }
@@ -207,14 +235,6 @@ ul{
 /*evenement*/
 
 /*bientôt*/
-.center{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 5%;
-}
-
 #title-soon{
   font-size: 300%;
   color: #b8860b;
