@@ -12,6 +12,7 @@
     include '../include/Navbar.html';
   ?>
   <section class="placement soon">
+  <section class="placement">
     <h2 id="title-soon">En cours de création</h2>
     <img src="../media/logo/icon.png" alt="Logo Didier Barbe Entreprise" id="logo-png">
   </section>
