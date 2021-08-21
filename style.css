@@ -70,18 +70,62 @@ ul {
 .bg-white a {
   color: black;
 }
+/* figure style */
+figure{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+figcaption{
+  text-align: center;
+}
+
+.legend-black{
+  color: white;
+  text-shadow: 1px 1px 1px gold;
+}
+
+.legend-white{
+  text-shadow: 1px 1px 1px silver;;
+}
 
 /*navbar*/
-#navbar {
-  position: fixed;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background: white;
-  border-bottom: 4px solid #b8860b;
-  z-index: 1;
-  font-family: "champ";
+.title-img,.hamburger{
+  display: none;
 }
-/*! placement is on responsive*/
+
+#menu a{
+  text-decoration: none;
+  color: darkgoldenrod;
+}
+
+/*déroulant*/
+#submenu-list{
+  display: none;
+  position: fixed;
+  background-color: rgba(255, 255, 255, .8);
+  z-index: 2;
+}
+  
+#submenu-link::after{
+  content: '▼';
+}
+  
+#submenu:hover #submenu-list{
+  display: block;
+  list-style: none;
+ }
+  
+.elements:hover{
+   list-style: initial;
+  color: darkgoldenrod;
+}
+
+#menu li{
+  color: darkgoldenrod;
+}
 
 /*footer*/
 #foot-bar{
@@ -102,7 +146,6 @@ ul {
 .element-foot{
   font-size: 109%;
 }
-/*! placement is on responsive*/
 
 /*accueil*/
 .article {
@@ -125,7 +168,12 @@ ul {
   width: 400px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
+}
+
+figcaption{
+  margin-top: 10px;
 }
 
 .text-history {
@@ -138,11 +186,34 @@ ul {
 
 /*ratafia*/
 /*navbar ratafia*/
-#nav-ratafia {
+
+#header-content{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: white;
+  transition: all ease 0.5s;
+  border-bottom: 4px solid darkgoldenrod;
+  /* z-index: 1; */
+}
+
+/* #nav-ratafia {
+  top: 10px;
   background: #151515;
   position: fixed;
   width: 100vw;
   border-bottom: 1px solid #ffffff;
+} */
+
+#nav-ratafia {
+  background-color: black;
+  margin-top: 80PX;
+  position: fixed;
+  width: 100vw;
+  border-bottom: 1px solid white;
 }
 
 #nav-ratafia a {
@@ -253,6 +324,12 @@ ul {
 
 /*evenement*/
 /* placement page */
+.soon{
+  border: 1px solid red;
+  width: 100%;
+  height: 690px;
+}
+
 .text-event{
   display: flex;
   justify-content: center;
@@ -287,3 +364,133 @@ ul {
 }
 /*responcise*/
 /*TODO chose size for responsive*/
+
+@media  screen and (max-width:1440px) {
+  /* Navbar */
+  #navbar{
+    border: none;
+  }
+
+  #menu {
+    transform: none;
+    opacity: 0;
+
+    transition: opacity 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+
+  .title-text{
+    display: none;
+  }
+  
+  #menuToggle{
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 1;
+  }
+  
+  #menuToggle input{
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0; 
+    z-index: 2; 
+  }
+  
+  #menuToggle span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: darkgoldenrod;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+  
+  /*animation span*/
+  #menuToggle span:first-child{
+    transform-origin: 0% 0%;
+  }
+  
+  #menuToggle span:nth-last-child(2){
+    transform-origin: 0% 100%;
+  }
+  
+  #menuToggle input:checked ~ span{
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+  
+  #menuToggle input:checked ~ span:nth-last-child(3){
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  #menuToggle input:checked ~ span:nth-last-child(2){
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  
+  #menu{
+    position: absolute;
+    width: 200px;
+    margin: -100px 0 0 0;
+    padding: 50px;
+    padding-top: 125px;
+    right: -100px;
+    background: white;
+    list-style-type: none;
+    border: 3px inset darkgoldenrod;
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+  
+  #menu li{
+    padding: 10px 0;
+    font-size: 22px;
+  }
+  
+  #menuToggle input:checked ~ ul{
+    transform: none;
+    opacity: 1;
+  }
+
+  .logo-svg{
+    width: 30%
+  }
+}
+
+@media  screen and (min-width:1441px) {
+  /* Navbar */
+  #navbar{
+    position: fixed;
+    width: 100vw;
+    background: white;
+    border-bottom: 4px solid darkgoldenrod;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    transition: all ease .5s;
+    z-index: 1;
+  }
+  
+  #navbar #menu{
+    list-style: none;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
