@@ -41,9 +41,11 @@ ul {
   font-family: "champ";
   font-size: 43px;
   border-bottom: 4px solid #b8860b;
+  text-align: center;
 }
 
 .subtitle {
+  text-align: center;
   color: #b8860b;
 }
 
@@ -468,6 +470,10 @@ figcaption{
   #foot-bar{
     margin-left: -2%;
     font-size: 85%;
+  }
+
+  .foot-liste{
+    text-align: center;
   }
 }
 
