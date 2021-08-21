@@ -127,26 +127,6 @@ figcaption{
   color: darkgoldenrod;
 }
 
-/*footer*/
-#foot-bar{
-  background: #151515;
-  color: darkgoldenrod;
-  padding: 5px;
-}
-
-.copy{
-  font-weight: bold;
-}
-
-#foot-bar .foot-nav .foot-liste{
-  display: flex;
-  justify-content: space-around;
-}
-
-.element-foot{
-  font-size: 109%;
-}
-
 /*accueil*/
 .article {
   width: 80%;
@@ -200,17 +180,8 @@ figcaption{
   /* z-index: 1; */
 }
 
-/* #nav-ratafia {
-  top: 10px;
-  background: #151515;
-  position: fixed;
-  width: 100vw;
-  border-bottom: 1px solid #ffffff;
-} */
-
 #nav-ratafia {
   background-color: black;
-  margin-top: 80PX;
   position: fixed;
   width: 100vw;
   border-bottom: 1px solid white;
@@ -362,6 +333,26 @@ figcaption{
   color: #b8860b;
   text-shadow: 3px 3px 3px #c0c0c0;
 }
+
+/*footer*/
+#foot-bar{
+  background: #151515;
+  color: darkgoldenrod;
+  padding: 5px;
+}
+
+.copy{
+  font-weight: bold;
+}
+
+#foot-bar .foot-nav .foot-liste{
+  display: flex;
+  justify-content: space-between;
+}
+
+.element-foot{
+  font-size: 109%;
+}
 /*responcise*/
 /*TODO chose size for responsive*/
 
@@ -384,9 +375,9 @@ figcaption{
   
   #menuToggle{
     display: block;
-    position: absolute;
-    top: 50px;
-    right: 50px;
+    position: fixed;
+    top: 15px;
+    right: 25px;
     z-index: 1;
   }
   
@@ -469,6 +460,15 @@ figcaption{
   .logo-svg{
     width: 30%
   }
+  /* Ratafia */
+ .fig-ratafia{
+    display: none;
+ }
+  /* footer */
+  #foot-bar{
+    margin-left: -2%;
+    font-size: 85%;
+  }
 }
 
 @media  screen and (min-width:1441px) {
@@ -492,5 +492,10 @@ figcaption{
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+
+  /*nav ratafia*/
+  #nav-ratafia{
+    margin-top: 80PX;
   }
 }
