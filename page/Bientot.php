@@ -8,9 +8,15 @@
   <title>Didier Barbe Entreprise | Bintôt</title>
 </head>
 <body>
-  <section class="placement">
+  <?php 
+    include '../include/Navbar.html';
+  ?>
+  <section class="placement soon">
     <h2 id="title-soon">En cours de création</h2>
     <img src="../media/logo/icon.png" alt="Logo Didier Barbe Entreprise" id="logo-png">
   </section>
+  <?php 
+    include '../include/Footer.html';
+  ?>
 </body>
 </html>

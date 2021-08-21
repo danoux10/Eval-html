@@ -9,8 +9,10 @@
 
   </head>
   <body>
-    <div class="header-content">
-      <!-- TODO include navbar -->
+    <header class="header-content">
+      <?php 
+        include '../include/Navbar.html';
+      ?>
       <nav id="nav-ratafia">
         <ul>
           <li class="elements-ratafia"><a href="#ratafia">Ratafia</a></li>
@@ -19,7 +21,7 @@
           <li class="elements-ratafia"><a href="#confit">Confit de Ratafia</a></li>
         </ul>
       </nav>
-    </div>
+    </header>
     <!--product ratafia-->
     <!-- ratafia -->
     <section id="ratafia" class="bg-black placement">
@@ -33,7 +35,10 @@
           </header>
           <img src="../media/separation.svg" alt="séparateur" class="separator"/>
           <div class="information">
-            <img src="../media/bouteille/ratafia.png" alt="bouteille de ratafia" id="bottle-ratafia"/>
+            <figure>
+              <img src="../media/bouteille/ratafia.png" alt="bouteille de ratafia" id="bottle-ratafia"/>
+              <figcaption class="legend-black">Ratafia</figcaption>
+            </figure>
             <div class="text">
               <p class="element">
                 Le Ratafia est l’apéritif traditionnel des vignerons champenois.
@@ -56,7 +61,10 @@
                 raisin.
               </p>
             </div>
-            <img src="../media/label/label_ratafia.png" alt="etiquette de ratafia" id="label-ratafia"/>
+            <figure>
+              <img src="../media/label/label_ratafia.png" alt="etiquette de ratafia" id="label-ratafia"/>
+              <figcaption class="bg-black">Etiquette Ratafia</figcaption>
+            </figure>
           </div>
           <header>
             <h3 class="subtitle">Comment le déguster</h3>
@@ -65,8 +73,7 @@
           
           <p class="element">Le ratafia se boit bien frais nature et sans glace.</p>
           <p class="element">Agrémente les viandes blanches: Chapon aux morilles, Cailles aux raisins etc…</p>
-          <a href="../media/recette/Ratafia.pdf" class="download">Télécharger Recette</a
-          >
+          <a href="../media/recette/Ratafia.pdf" class="download">Télécharger Recette</a>
         </article>
       </div>
     </section>
@@ -82,7 +89,10 @@
           </header>
           <img src="../media/separation.svg" alt="séparateur" class="separator"/>
           <div class="information">
-            <img src="../media/bouteille/vieux_ratafia.png" alt="bouteille de vieux ratafia"id="bottle-old"/>
+            <figure>
+              <img src="../media/bouteille/vieux_ratafia.png" alt="bouteille de vieux ratafia"id="bottle-old"/>
+              <figcaption class="legend-white">Vieux Ratifia</figcaption>
+            </figure>
             <div class="text">
               <p class="element">Depuis quatre générations, la famille Barbe élabore l’apéritif traditionnel le Ratafia.</p> 
               <p class="element">Pour concevoir notre vieux ratafia nous sélectionnons une seule vendange, que nous faisons vieillir au minimum 5 ans dans des fûts de chêne. Notre volonté est de faire des produits d’exception.</p>
@@ -91,7 +101,10 @@
               <p class="element">Sa couleur peut varier en fonction de son petit frère sélectionné pour être mis en fût.</p>
               </p>
             </div>
-            <img src="../media/label/label_vieux_ratafia-bordure.png" alt="etiquette de vieux ratafia" id="label-old"/>
+            <figure>
+              <img src="../media/label/label_vieux_ratafia-bordure.png" alt="etiquette de vieux ratafia" id="label-old"/>
+              <figcaption class="legend-white">Etiquette Vieux Ratafia</figcaption>
+            </figure>
           </div>
           <header>
             <h3 class="subtitle">Comment le déguster</h3>
@@ -115,7 +128,10 @@
           </header>
           <img src="../media/separation.svg" alt="séparateur" class="separator"/>
           <div class="information">
-            <img src="../media/bouteille/tres_vieux_ratafia.png" alt="bouteille de très vieux ratafia" id="bottle-veryold"/>
+            <figure>
+              <img src="../media/bouteille/tres_vieux_ratafia.png" alt="bouteille de très vieux ratafia" id="bottle-veryold"/>
+              <figcaption class="legend-black">Très vieux ratafia</figcaption>
+            </figure>
             <div class="text">
               <p class="element">En Champagne on déguste du ratafia depuis le moyen Age, dès que l’art de la distillation fût maîtriser cela permettait de conserver le jus de raisin. </p>
               <p class="element">Ce breuvage traditionnel était donc en place, bien avant le Champage, celui-ci fit son apparition vers le 17ème siècle, grâce a Don Pérignon. </p>
@@ -125,7 +141,10 @@
               <p class="element">Un goût tout en subtilité et en profondeur.</p>
               <p class="element">Titrant à 18°, il s’apprécie frais, mais pas trop, bien évidemment sans glace.</p>
             </div>
-            <img src="../media/label/label_tres_vieux_ratafia-bordure.png" alt="etiquette de très vieux ratafia" id="label-veryold"/>
+            <figure>
+              <img src="../media/label/label_tres_vieux_ratafia-bordure.png" alt="etiquette de très vieux ratafia" id="label-veryold"/>
+              <figcaption class="legend-black">Etiquette Très Vieux Ratafia</figcaption>
+            </figure>
           </div>
           <header>
             <h3 class="subtitle">Comment le déguster</h3>
@@ -149,12 +168,18 @@
           </header>
           <img src="../media/separation.svg" alt="séparateur" class="separator"/>
           <div class="information">
-            <img src="../media/bouteille/ratafia_confit.png" alt="Confit de ratafia & bouteille de ratafia" id="confit-ratafia"/>
+            <figure>
+              <img src="../media/bouteille/ratafia_confit.png" alt="Confit de ratafia & bouteille de ratafia" id="confit-ratafia"/>
+              <figcaption class="legend-white">Ratafia & Confit de Ratafia</figcaption>
+            </figure>
             <div class="text">
               <p class="element">Le confit de ratafia est du ratafia qui est gélifier</p>
             </div>
-            <img src="../media/bouteille/duo-confit.png" alt="Confit de ratafia" id="duo-confit"/>
-          </div>
+            <figure>
+              <img src="../media/bouteille/duo-confit.png" alt="Confit de ratafia" id="duo-confit"/>
+              <figcaption class="legend-white"> Confit de Ratafia</figcaption>
+            </figure>
+           </div>
           <header>
             <h3 class="subtitle">Comment le déguster</h3>
           </header>
@@ -163,6 +188,8 @@
         </article>
       </div>
     </section>
-    <!-- TODO include footer -->
+    <?php 
+      include '../include/Footer.html';
+    ?>
   </body>
 </html>
