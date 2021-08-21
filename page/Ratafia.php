@@ -9,50 +9,10 @@
 
   </head>
   <body>
-
-<header class="header-content">
-      <?php 
-        include '../include/Navbar.html';
-      ?>
-    <header id="header-content">
-     
-      <header id="navbar">
-        <nav role='navigation'>
-          <div id="menuToggle">
-            <input type="checkbox" class="hamburger"/>
-      
-            <span class="hamburger"></span>
-            <span class="hamburger"></span>
-            <span class="hamburger"></span>
-      
-            <ul id="menu">
-              <li class="title-text"><a href="../index.php"><h1>Didier Barbe Entreprise</h1></a></li>
-              <li class="title-img"><a href="../index.php"><h1><img src="media/logo/logo_dbe.svg" alt="" class="logo-svg"></h1></a></li>
-              <li><a href="index.php">Accueil</a></li>
-              <li id="submenu"><a href="#" id="submenu-link">Produits</a>
-                <ul id="submenu-list">
-                  <li class="elements"><a href="page/Bientot.php">Magra Bendi</a></li>
-                  <li class="elements"><a href="page/Ratafia.php">Ratafia</a></li>
-                  <li class="elements"><a href="page/Bientot.php">Fine</a></li>
-                  <li class="elements"><a href="page/Bientot.php">Marc</a></li>
-                  <li class="elements"><a href="page/Bientot.php">Vodka</a></li>
-                  <li class="elements"><a href="page/Bientot.php">Whisky</a></li>
-                  <li class="elements"><a href="page/Bientot.php">Limoncello</a></li>
-                  <li class="elements"><a href="page/Bientot.php">Liqueur Fine Safran</a></li>
-                  <li class="elements"><a href="page/Bientot.php">Esprit de ratafia</a></li>
-                </ul>
-              </li>
-              <li><a href="page/Footer.html">footer</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-
     <header class="header-content">
       <?php 
         include '../include/Navbar.html';
       ?>
-
       <nav id="nav-ratafia">
         <ul>
           <li class="elements-ratafia"><a href="#ratafia">Ratafia</a></li>
@@ -75,7 +35,7 @@
           </header>
           <img src="../media/separation.svg" alt="séparateur" class="separator"/>
           <div class="information">
-            <figure>
+            <figure class="fig-ratafia">
               <img src="../media/bouteille/ratafia.png" alt="bouteille de ratafia" id="bottle-ratafia"/>
               <figcaption class="legend-black">Ratafia</figcaption>
             </figure>
@@ -101,7 +61,7 @@
                 raisin.
               </p>
             </div>
-            <figure>
+            <figure class="fig-ratafia">
               <img src="../media/label/label_ratafia.png" alt="etiquette de ratafia" id="label-ratafia"/>
               <figcaption class="bg-black">Etiquette Ratafia</figcaption>
             </figure>
@@ -129,7 +89,7 @@
           </header>
           <img src="../media/separation.svg" alt="séparateur" class="separator"/>
           <div class="information">
-            <figure>
+            <figure class="fig-ratafia">
               <img src="../media/bouteille/vieux_ratafia.png" alt="bouteille de vieux ratafia"id="bottle-old"/>
               <figcaption class="legend-white">Vieux Ratifia</figcaption>
             </figure>
@@ -141,7 +101,7 @@
               <p class="element">Sa couleur peut varier en fonction de son petit frère sélectionné pour être mis en fût.</p>
               </p>
             </div>
-            <figure>
+            <figure class="fig-ratafia">
               <img src="../media/label/label_vieux_ratafia-bordure.png" alt="etiquette de vieux ratafia" id="label-old"/>
               <figcaption class="legend-white">Etiquette Vieux Ratafia</figcaption>
             </figure>
@@ -168,7 +128,7 @@
           </header>
           <img src="../media/separation.svg" alt="séparateur" class="separator"/>
           <div class="information">
-            <figure>
+            <figure class="fig-ratafia">
               <img src="../media/bouteille/tres_vieux_ratafia.png" alt="bouteille de très vieux ratafia" id="bottle-veryold"/>
               <figcaption class="legend-black">Très vieux ratafia</figcaption>
             </figure>
@@ -181,7 +141,7 @@
               <p class="element">Un goût tout en subtilité et en profondeur.</p>
               <p class="element">Titrant à 18°, il s’apprécie frais, mais pas trop, bien évidemment sans glace.</p>
             </div>
-            <figure>
+            <figure class="fig-ratafia">
               <img src="../media/label/label_tres_vieux_ratafia-bordure.png" alt="etiquette de très vieux ratafia" id="label-veryold"/>
               <figcaption class="legend-black">Etiquette Très Vieux Ratafia</figcaption>
             </figure>
@@ -208,14 +168,14 @@
           </header>
           <img src="../media/separation.svg" alt="séparateur" class="separator"/>
           <div class="information">
-            <figure>
+            <figure class="fig-ratafia">
               <img src="../media/bouteille/ratafia_confit.png" alt="Confit de ratafia & bouteille de ratafia" id="confit-ratafia"/>
               <figcaption class="legend-white">Ratafia & Confit de Ratafia</figcaption>
             </figure>
             <div class="text">
               <p class="element">Le confit de ratafia est du ratafia qui est gélifier</p>
             </div>
-            <figure>
+            <figure class="fig-ratafia">
               <img src="../media/bouteille/duo-confit.png" alt="Confit de ratafia" id="duo-confit"/>
               <figcaption class="legend-white"> Confit de Ratafia</figcaption>
             </figure>
