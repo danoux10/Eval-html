@@ -8,6 +8,9 @@
   <title>Didier Barbe Entreprise | Evenement</title>
 </head>
 <body>
+  <?php 
+      include 'page/Navbar.html';
+  ?>
   <section id="event" class="placement bg-black">
     <div class="article">
       <article class="text-event">
@@ -35,5 +38,8 @@
       </article>
     </div>
   </section>
+  <?php 
+      include 'page/Footer.html';
+  ?>
 </body>
 </html>

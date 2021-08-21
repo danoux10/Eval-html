@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <?php 
+      include 'page/Navbar.html';
+    ?>
     <section id="histoire" class="bg-black placement">
       <div class="article">
         <article class="text-home">
@@ -93,10 +96,16 @@
             </p>
           </div>
         </article>
-        <aside class="bg-image">
-          <img src="media/logo/Logo.svg" alt="logo" class="logo-svg" />
+        <aside>
+          <figure class="bg-image">
+            <img src="media/logo/Logo.svg" alt="logo" class="logo-svg" title="logo"/>
+            <figcaption><p class="legend-black">Logo</p></figcaption>
+          </figure>
         </aside>
       </div>
     </section>
+    <?php 
+      include 'page/Footer.html';
+    ?>
   </body>
 </html>
