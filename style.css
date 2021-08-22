@@ -26,6 +26,27 @@ ul {
   list-style: none;
 }
 
+/*custom scroll bar body*/
+body::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: silver;
+}
+
+body::-webkit-scrollbar, #submenu-list::-webkit-scrollbar{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb, #submenu-list::-webkit-scrollbar-thumb{
+	background-color: darkgoldenrod;
+}
+
+/* custom scroll bar submenu */
+#submenu-list::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: black;
+}
+
 /*commun au page*/
 .placement {
   width: 100%;
@@ -34,6 +55,16 @@ ul {
   justify-content: center;
   align-items: center;
   padding: 100px 0 100px 0;
+}
+
+.placement-soon{
+  margin-top: 0;
+  border: 1px solid red;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
@@ -84,14 +115,14 @@ figcaption{
   text-align: center;
 }
 
-.legend-black{
+/* .legend-black{
   color: white;
   text-shadow: 1px 1px 1px gold;
 }
 
 .legend-white{
   text-shadow: 1px 1px 1px silver;;
-}
+} */
 
 /*navbar*/
 .title-img,.hamburger{
@@ -179,29 +210,6 @@ figcaption{
   background: white;
   transition: all ease 0.5s;
   border-bottom: 4px solid darkgoldenrod;
-  /* z-index: 1; */
-}
-
-#nav-ratafia {
-  background-color: black;
-  position: fixed;
-  width: 100vw;
-  border-bottom: 1px solid white;
-}
-
-#nav-ratafia a {
-  color: gold;
-}
-
-#nav-ratafia a:hover {
-  border-bottom: 3px solid #b8860b;
-  border-radius: 15px;
-  transition: 0.2s;
-}
-
-#nav-ratafia ul {
-  display: flex;
-  justify-content: space-around;
 }
 /*style produit*/
 .article {
@@ -298,7 +306,6 @@ figcaption{
 /*evenement*/
 /* placement page */
 .soon{
-  border: 1px solid red;
   width: 100%;
   height: 690px;
 }
@@ -359,6 +366,37 @@ figcaption{
 /*TODO chose size for responsive*/
 
 @media  screen and (max-width:1440px) {
+  /*size font submenu*/
+  .elements a{
+    font-size: 16px;
+    margin-left: -5px;
+    margin-right: 4px;
+  }
+  /*nav h1 display*/
+  .title-img{
+    display: block;
+    padding-top: -10px;
+  }
+
+  .logo-nav{
+    margin-top: -60px;
+    margin-bottom: -40px;
+  }
+
+  .title-text{
+    display: none;
+  }
+
+  /* submenu */
+  #submenu-list{
+    text-align: center;
+    font-size: 100%;
+  }
+
+  #submenu-list{
+    height: 50vh;
+    overflow: scroll;
+  }
   /* Navbar */
   #navbar{
     border: none;
@@ -367,19 +405,15 @@ figcaption{
   #menu {
     transform: none;
     opacity: 0;
-
     transition: opacity 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   }
 
-  .title-text{
-    display: none;
-  }
-  
   #menuToggle{
+    /* background: #151515; */
     display: block;
     position: fixed;
-    top: 15px;
-    right: 25px;
+    top: 20px;
+    right: 50px;
     z-index: 1;
   }
   
@@ -407,8 +441,7 @@ figcaption{
     transform-origin: 4px 0px;
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                 opacity 0.55s ease;
-  }
-  
+  }  
   /*animation span*/
   #menuToggle span:first-child{
     transform-origin: 0% 0%;
@@ -459,12 +492,66 @@ figcaption{
     opacity: 1;
   }
 
-  .logo-svg{
+  .logo-nav{
     width: 30%
   }
+  /* nav ratafia */
+  #nav-ratafia {
+    background-color: black;
+    width: 100vw;
+    border-bottom: 1px solid white;
+  }
+  
+  #nav-ratafia a {
+    color: gold;
+  }
+  
+  #nav-ratafia a:hover {
+    border-bottom: 3px solid #b8860b;
+    border-radius: 15px;
+    transition: 0.2s;
+  }
+  
+  #nav-ratafia ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #nav-ratafia{
+    padding-top: 40px;
+  }
+  /* Accueil */
+  .logo-svg{
+    width: 50%;
+  }
+  /* soon */
+  #title-soon{
+    font-size: 200%;
+  }
+
+  #logo-png{
+    width: 50%;
+  }
+  /* evenement */
+
   /* Ratafia */
+  .header-content{
+    position: fixed;
+  }
+  /*nav ratafia*/
+  #nav-ratafia{
+    text-align: center;
+  }
+
  .fig-ratafia{
     display: none;
+ }
+
+ .info-rata{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
  }
   /* footer */
   #foot-bar{
@@ -501,7 +588,28 @@ figcaption{
   }
 
   /*nav ratafia*/
+  #nav-ratafia {
+    background-color: black;
+    width: 100vw;
+    border-bottom: 1px solid white;
+  }
+  
+  #nav-ratafia a {
+    color: gold;
+  }
+  
+  #nav-ratafia a:hover {
+    border-bottom: 3px solid #b8860b;
+    border-radius: 15px;
+    transition: 0.2s;
+  }
+  
+  #nav-ratafia ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
   #nav-ratafia{
-    margin-top: 80PX;
+    margin-top: 80px;
   }
 }
