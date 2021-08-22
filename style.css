@@ -494,7 +494,8 @@ figcaption{
     display: flex;
     justify-content: center;
     transition: all ease .5s;
-    /* z-index: 1; */
+    border: 1px solid red;
+    z-index: 1;
   }
   #navbar #menu{
     list-style: none;
@@ -506,6 +507,7 @@ figcaption{
   }
   /*nav ratafia*/
   #nav-ratafia {
+    position: fixed;
     background-color: black;
     width: 100vw;
     border-bottom: 1px solid white;
