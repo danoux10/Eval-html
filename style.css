@@ -123,7 +123,7 @@ figcaption{
   list-style: none;
  }
 .elements:hover{
-   list-style: initial;
+  list-style: initial;
   color: darkgoldenrod;
 }
 #menu li{
