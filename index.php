@@ -7,6 +7,7 @@
     <meta name="description" content="Didier Barbe Entreprise est une entreprise familial & artisanal dans les vins & spiritueux"/>
     <title>Didier Barbe Entreprise | Accueil</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="media/logo/dbe.ico" type="image/x-icon">
   </head>
   <body>
     <?php 
@@ -98,7 +99,7 @@
         </article>
         <aside>
           <figure class="bg-image">
-            <img src="media/logo/Logo.svg" alt="logo" class="logo-svg" title="logo"/>
+            <img src="media/logo/Logo.svg" alt="logo" class="logo-svg"/>
             <figcaption><p class="legend-black">Logo</p></figcaption>
           </figure>
         </aside>

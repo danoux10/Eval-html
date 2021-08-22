@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
     <title>Didier Barbe Entreprise | Ratafia</title>
-
+    <link rel="shortcut icon" href="media/logo/dbe.ico" type="image/x-icon">
   </head>
   <body>
     <header class="header-content">
@@ -34,12 +34,12 @@
             <h3 class="subtitle">Présentation</h3>
           </header>
           <img src="../media/separation.svg" alt="séparateur" class="separator"/>
-          <div class="information">
+          <div class="information info-rata">
             <figure class="fig-ratafia">
               <img src="../media/bouteille/ratafia.png" alt="bouteille de ratafia" id="bottle-ratafia"/>
               <figcaption class="legend-black">Ratafia</figcaption>
             </figure>
-            <div class="text">
+            <div class="text text-ratafia">
               <p class="element">
                 Le Ratafia est l’apéritif traditionnel des vignerons champenois.
               </p>
