@@ -53,7 +53,6 @@ body::-webkit-scrollbar-thumb, #submenu-list::-webkit-scrollbar-thumb{
 }
 .placement-soon{
   margin-top: 0;
-  border: 1px solid red;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -291,7 +290,7 @@ figcaption{
 /*footer*/
 #foot-bar{
   background: #151515;
-  color: darkgoldenrod;
+  color: gold;
   padding: 5px;
 }
 .copy{
@@ -494,7 +493,6 @@ figcaption{
     display: flex;
     justify-content: center;
     transition: all ease .5s;
-    border: 1px solid red;
     z-index: 1;
   }
   #navbar #menu{
