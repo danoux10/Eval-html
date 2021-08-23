@@ -43,7 +43,7 @@
               <p class="element">
                 Le Ratafia est l’apéritif traditionnel des vignerons champenois.
               </p>
-              <p class="element">pendant les vendanges, au pied du pressoir.</p>
+              <p class="element">Servi pendant les vendanges, au pied du pressoir.</p>
               <p class="element">
                 On en buvait un verre au Moyen-Âge, pour ratifier un traiter,
                 d’où le nom Ratafia.
