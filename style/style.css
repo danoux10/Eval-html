@@ -1,17 +1,18 @@
 /*ajout font*/
 @font-face {
   font-family: "ard";
-  src: url("font/ARDECODE.ttf");
+  src: url("../font/ARDECODE.ttf");
 }
 
 @font-face {
   font-family: "champ";
-  src: url("font/C&L.ttf");
+  src: url("../font/C&L.ttf");
 }
 
 html {
   scroll-behavior: smooth;
 }
+
 body { 
   font-family: sans-serif;
   margin: 0;
@@ -22,6 +23,8 @@ a {
 ul {
   list-style: none;
 }
+
+/**/
 
 /*custom scroll bar body*/
 body::-webkit-scrollbar-track{
@@ -289,6 +292,7 @@ figcaption{
 
 /*footer*/
 #foot-bar{
+  align-content: end;
   background: #151515;
   color: darkgoldenrod;
   padding: 5px;
